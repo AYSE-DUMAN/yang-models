@@ -1,0 +1,110 @@
+{
+	"modules": {
+		"Cisco-IOS-XR-types": ["xr", "http://cisco.com/ns/yang/cisco-xr-types"],
+		"Cisco-IOS-XR-um-interface-cfg": ["um-interface-cfg", "http://cisco.com/ns/yang/Cisco-IOS-XR-um-interface-cfg"],
+		"cisco-semver": ["cisco-semver", "http://cisco.com/ns/yang/cisco-semver"],
+		"ietf-inet-types": ["inet", "urn:ietf:params:xml:ns:yang:ietf-inet-types"],
+		"tailf-common": ["tailf", "http://tail-f.com/yang/common"]
+	},
+	"tree": {
+		"Cisco-IOS-XR-um-interface-cfg:interfaces": ["container", {
+			"interface": ["list", {
+					"interface-name": ["leaf", "string"],
+					"sub-interface-type": ["container", {
+						"l2transport": ["container", {}],
+						"point-to-point": ["container", {}],
+						"multipoint": ["container", {}]
+					}],
+					"ipv4": ["container", {}],
+					"ipv6": ["container", {}],
+					"dampening": ["container", {
+						"decay-half-life": ["container", {
+							"value": ["leaf", "uint32"],
+							"reuse-threshold": ["container", {
+								"value": ["leaf", "uint32"],
+								"suppress-threshold": ["container", {
+									"value": ["leaf", "uint32"],
+									"max-suppress-time": ["container", {
+										"value": ["leaf", "uint32"],
+										"restart-penalty": ["container", {
+											"value": ["leaf", "uint32"]
+										}]
+									}]
+								}]
+							}]
+						}]
+					}],
+					"encapsulation": ["container", {
+						"ppp": ["container", {}],
+						"hdlc": ["container", {}],
+						"mfr": ["container", {}],
+						"frame-relay": ["container", {
+							"IETF": ["container", {}]
+						}]
+					}],
+					"shutdown": ["container", {}],
+					"mtu": ["leaf", "uint32"],
+					"logging": ["container", {
+						"events": ["container", {
+							"link-status": ["container", {}]
+						}]
+					}],
+					"bandwidth": ["leaf", "uint32"],
+					"description": ["leaf", "string"]
+				},
+				[
+					["Cisco-IOS-XR-um-interface-cfg", "interface-name"]
+				]
+			],
+			"interface-preconfigure": ["list", {
+					"interface-name": ["leaf", "string"],
+					"sub-interface-type": ["container", {
+						"l2transport": ["container", {}],
+						"point-to-point": ["container", {}],
+						"multipoint": ["container", {}]
+					}],
+					"ipv4": ["container", {}],
+					"ipv6": ["container", {}],
+					"dampening": ["container", {
+						"decay-half-life": ["container", {
+							"value": ["leaf", "uint32"],
+							"reuse-threshold": ["container", {
+								"value": ["leaf", "uint32"],
+								"suppress-threshold": ["container", {
+									"value": ["leaf", "uint32"],
+									"max-suppress-time": ["container", {
+										"value": ["leaf", "uint32"],
+										"restart-penalty": ["container", {
+											"value": ["leaf", "uint32"]
+										}]
+									}]
+								}]
+							}]
+						}]
+					}],
+					"encapsulation": ["container", {
+						"ppp": ["container", {}],
+						"hdlc": ["container", {}],
+						"mfr": ["container", {}],
+						"frame-relay": ["container", {
+							"IETF": ["container", {}]
+						}]
+					}],
+					"shutdown": ["container", {}],
+					"mtu": ["leaf", "uint32"],
+					"logging": ["container", {
+						"events": ["container", {
+							"link-status": ["container", {}]
+						}]
+					}],
+					"bandwidth": ["leaf", "uint32"],
+					"description": ["leaf", "string"]
+				},
+				[
+					["Cisco-IOS-XR-um-interface-cfg", "interface-name"]
+				]
+			]
+		}]
+	},
+	"annotations": {}
+}
