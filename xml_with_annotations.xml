@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <interfaces xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-interface-cfg">
+    <interface>
+      <!-- # keys: interface-name-->
+      <!-- # entries: 0.. -->
+      <interface-name>
+        <!-- type: xr:Interface-name -->
+      </interface-name>
+      <sub-interface-type>
+        <l2transport>
+          <!-- presence: Indicates a l2transport node is configured. -->
+        </l2transport>
+        <point-to-point>
+          <!-- presence: Indicates a point-to-point node is configured. -->
+        </point-to-point>
+        <multipoint>
+          <!-- presence: Indicates a multipoint node is configured. -->
+        </multipoint>
+      </sub-interface-type>
+      <ipv4/>
+      <ipv6/>
+      <dampening>
+        <!-- presence: Indicates a dampening node is configured. -->
+        <decay-half-life>
+          <!-- presence: Indicates a decay-half-life node is configured. -->
+          <value>
+            <!-- type: uint32 -->
+          </value>
+          <reuse-threshold>
+            <!-- presence: Indicates a reuse-threshold node is configured. -->
+            <value>
+              <!-- type: uint32 -->
+            </value>
+            <suppress-threshold>
+              <!-- presence: Indicates a suppress-threshold node is configured. -->
+              <value>
+                <!-- type: uint32 -->
+              </value>
+              <max-suppress-time>
+                <!-- presence: Indicates a max-suppress-time node is configured. -->
+                <value>
+                  <!-- type: uint32 -->
+                </value>
+                <restart-penalty>
+                  <!-- presence: Indicates a restart-penalty node is configured. -->
+                  <value>
+                    <!-- type: uint32 -->
+                  </value>
+                </restart-penalty>
+              </max-suppress-time>
+            </suppress-threshold>
+          </reuse-threshold>
+        </decay-half-life>
+      </dampening>
+      <encapsulation>
+        <ppp>
+          <!-- presence: Indicates a ppp node is configured. -->
+        </ppp>
+        <hdlc>
+          <!-- presence: Indicates a hdlc node is configured. -->
+        </hdlc>
+        <mfr>
+          <!-- presence: Indicates a mfr node is configured. -->
+        </mfr>
+        <frame-relay>
+          <!-- presence: Indicates a frame-relay node is configured. -->
+          <IETF>
+            <!-- presence: Indicates a IETF node is configured. -->
+          </IETF>
+        </frame-relay>
+      </encapsulation>
+      <shutdown>
+        <!-- presence: Indicates a shutdown node is configured. -->
+      </shutdown>
+      <mtu>
+        <!-- type: uint32 -->
+      </mtu>
+      <logging>
+        <events>
+          <link-status>
+            <!-- presence: Indicates a link-status node is configured. -->
+          </link-status>
+        </events>
+      </logging>
+      <bandwidth>
+        <!-- type: uint32 -->
+      </bandwidth>
+      <description>
+        <!-- type: string -->
+      </description>
+    </interface>
+    <interface-preconfigure>
+      <!-- # keys: interface-name-->
+      <!-- # entries: 0.. -->
+      <interface-name>
+        <!-- type: xr:Interface-name -->
+      </interface-name>
+      <sub-interface-type>
+        <l2transport>
+          <!-- presence: Indicates a l2transport node is configured. -->
+        </l2transport>
+        <point-to-point>
+          <!-- presence: Indicates a point-to-point node is configured. -->
+        </point-to-point>
+        <multipoint>
+          <!-- presence: Indicates a multipoint node is configured. -->
+        </multipoint>
+      </sub-interface-type>
+      <ipv4/>
+      <ipv6/>
+      <dampening>
+        <!-- presence: Indicates a dampening node is configured. -->
+        <decay-half-life>
+          <!-- presence: Indicates a decay-half-life node is configured. -->
+          <value>
+            <!-- type: uint32 -->
+          </value>
+          <reuse-threshold>
+            <!-- presence: Indicates a reuse-threshold node is configured. -->
+            <value>
+              <!-- type: uint32 -->
+            </value>
+            <suppress-threshold>
+              <!-- presence: Indicates a suppress-threshold node is configured. -->
+              <value>
+                <!-- type: uint32 -->
+              </value>
+              <max-suppress-time>
+                <!-- presence: Indicates a max-suppress-time node is configured. -->
+                <value>
+                  <!-- type: uint32 -->
+                </value>
+                <restart-penalty>
+                  <!-- presence: Indicates a restart-penalty node is configured. -->
+                  <value>
+                    <!-- type: uint32 -->
+                  </value>
+                </restart-penalty>
+              </max-suppress-time>
+            </suppress-threshold>
+          </reuse-threshold>
+        </decay-half-life>
+      </dampening>
+      <encapsulation>
+        <ppp>
+          <!-- presence: Indicates a ppp node is configured. -->
+        </ppp>
+        <hdlc>
+          <!-- presence: Indicates a hdlc node is configured. -->
+        </hdlc>
+        <mfr>
+          <!-- presence: Indicates a mfr node is configured. -->
+        </mfr>
+        <frame-relay>
+          <!-- presence: Indicates a frame-relay node is configured. -->
+          <IETF>
+            <!-- presence: Indicates a IETF node is configured. -->
+          </IETF>
+        </frame-relay>
+      </encapsulation>
+      <shutdown>
+        <!-- presence: Indicates a shutdown node is configured. -->
+      </shutdown>
+      <mtu>
+        <!-- type: uint32 -->
+      </mtu>
+      <logging>
+        <events>
+          <link-status>
+            <!-- presence: Indicates a link-status node is configured. -->
+          </link-status>
+        </events>
+      </logging>
+      <bandwidth>
+        <!-- type: uint32 -->
+      </bandwidth>
+      <description>
+        <!-- type: string -->
+      </description>
+    </interface-preconfigure>
+  </interfaces>
+</data>
